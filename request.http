@@ -1,0 +1,29 @@
+GET http://localhost:3001/books HTTP/1.1
+
+###
+GET http://localhost:3001/books/1 HTTP/1.1
+
+###
+POST http://localhost:3001/books/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Programando en la UTN",
+    "author": "Pilo Pere",
+    "year": 1950
+}
+
+###
+
+PUT http://localhost:3001/books/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Programando en la UTN",
+    "author": "Pilo Pere",
+    "year": 19
+}
+
+###
+
+DELETE http://localhost:3001/books/3 HTTP/1.1
